@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    private const string EnergyKey = "Energy";
+    private const string EnergyReadyKey = "EnergyReady";
+
     [SerializeField] private TMP_Text highScoreText;
     [SerializeField] private TMP_Text energyText;
     [SerializeField] private Button playButton;
@@ -17,9 +20,6 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private int energyRechargeDuration;
 
     private int energy;
-
-    private const string EnergyKey = "Energy";
-    private const string EnergyReadyKey = "EnergyReady";
 
     private void Start()
     {
